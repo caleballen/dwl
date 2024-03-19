@@ -3,6 +3,8 @@ VERSION  = `git describe --tags --dirty 2>/dev/null || echo $(_VERSION)`
 
 PKG_CONFIG = pkg-config
 
+CFLAGS = -march=native -fomit-frame-pointer -flto -Os
+
 # paths
 PREFIX = /usr/local
 MANDIR = $(PREFIX)/share/man
